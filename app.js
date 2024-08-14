@@ -10,7 +10,7 @@ async function getdata() {
     try{
         document.getElementById('error').textContent = "";
         let pokemon = document.getElementById("pokemon").value;
-        let api = `https://pokeapi.co/api/v2/pokemon/${pokemon}`;
+        let api = `https://pokeapi.co/api/v2/pokemon/${pokemo.toLowerCase()}`;
         let response = await fetch(api);
         if(pokemon==""){
             document.getElementById("name").textContent = ``;
